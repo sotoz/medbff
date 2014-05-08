@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<servlet>
+		<servlet-name>Medbff</servlet-name>
+		<servlet-class>com.med.bff.MedbffServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Medbff</servlet-name>
+		<url-pattern>/medbff</url-pattern>
+	</servlet-mapping>
+
+	<!-- wall data add -->
+	<servlet>
+		<servlet-name>WallAdd</servlet-name>
+		<servlet-class>com.med.bff.WallAdd</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WallAdd</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+
+	<!-- wall link add -->
+	<servlet>
+		<servlet-name>WallLinkAdd</servlet-name>
+		<servlet-class>com.med.bff.WallLinkAdd</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WallLinkAdd</servlet-name>
+		<url-pattern>/addlink</url-pattern>
+	</servlet-mapping>
+
+	<!-- wall query list -->
+	<servlet>
+		<servlet-name>WallRead</servlet-name>
+		<servlet-class>com.med.bff.WallRead</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WallRead</servlet-name>
+		<url-pattern>/readwall</url-pattern>
+	</servlet-mapping>
+
+	<!-- list users -->
+	<servlet>
+		<servlet-name>ListUsers</servlet-name>
+		<servlet-class>com.med.bff.ListUsers</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListUsers</servlet-name>
+		<url-pattern>/listusers</url-pattern>
+	</servlet-mapping>
+
+	<!-- default page -->
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
