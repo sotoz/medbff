@@ -31,6 +31,7 @@ public class ListUsers extends HttpServlet {
 		HtmlHelper htmlhelp = new HtmlHelper();
 
 		if (usr != null) {
+			//test
 			// add html header
 			String header = htmlhelp.getHeaderHtml(usr.getNickname() +" | <a href=\""+ usrService.createLogoutURL("/")+"\">Logout</a>");
 			resp.getWriter().println(header);
